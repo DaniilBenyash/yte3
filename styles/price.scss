@@ -1,0 +1,52 @@
+@import '../styles/_variables.scss';
+
+.price{
+    background-color: $background-2;
+    border-radius: 35px;
+    margin: 0 100px;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__title{
+        width: 350px;
+
+        h1{
+            margin: 0;
+        }
+    }
+
+    &__table{
+        @include font-headline-2;
+        border-collapse: collapse;
+        width: 100%;
+        text-align: center;
+        margin-left: 100px;
+
+        &_title{
+            font-size: 30px;
+            color: $color-orange;
+
+            th{
+                padding: 20px;
+            }
+        }
+
+        &_thead{
+            @include font-headline-3;
+            border-bottom: 1px solid white;
+            
+            th{
+                padding: 10px;
+            }
+        }
+
+        td{
+            border-bottom: 1px solid white;
+            padding: 20px;
+            @include font-headline-2;
+        }
+    }
+}

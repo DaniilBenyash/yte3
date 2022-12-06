@@ -1,0 +1,8 @@
+@import '../styles/_variables.scss';
+
+.glow-orange{
+    @include glow($color-orange);
+}
+.glow-green{
+    @include glow($color-green);
+}

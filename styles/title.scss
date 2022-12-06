@@ -1,0 +1,9 @@
+@import '../styles/_variables.scss';
+
+.title{
+    @include font-headline-1;
+
+    &-green{
+        color: $color-green;
+    }
+ }

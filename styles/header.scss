@@ -1,0 +1,62 @@
+@import '../styles/_variables.scss';
+
+.header{
+    width: 100%;
+    height: 70px;
+    padding: 0 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+    }
+
+    &__name{
+        @include font-headline-2;
+
+        &::first-letter{
+            color: $color-green;
+        }
+
+        &_b{
+            color: $color-orange;
+        }
+    }
+
+    &__contacts{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        position: relative;
+        z-index: 3;
+    }
+
+    &__phone_number{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        p{
+            @include font-headline-3;
+        }
+    }
+
+    &__viber{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        p{
+            @include font-headline-3;
+            color: #7E57C2;
+        }
+        
+    }
+}
